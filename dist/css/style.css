@@ -19,6 +19,10 @@ body {
   right: 0;
 }
 
+.terminal {
+  visibility: hidden;
+}
+
 #loading-screen {
   position: absolute;
   margin-left: auto;

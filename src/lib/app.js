@@ -65,14 +65,12 @@ function main() {
     function init(resJSON) {
 
         loadManager.onProgress = function(item, loaded, total) {
-            console.log(item, loaded, total);
             document.getElementById("loading-screen").innerText = "Loading resource " + loaded + " of " + total;
             if (loaded == total) {
                 document.getElementById("loading-screen").innerText = "";
                 let terminalLines = document.getElementsByClassName("terminal");
-                console.log(terminalLines);
                   for (const line of terminalLines) {
-                  // line.style.visibility = "visible";
+                  line.style.visibility = "visible";
                 }
             }
         }

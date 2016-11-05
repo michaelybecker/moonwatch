@@ -117759,21 +117759,19 @@ function main() {
     function init(resJSON) {
 
         loadManager.onProgress = function (item, loaded, total) {
-            console.log(item, loaded, total);
             document.getElementById("loading-screen").innerText = "Loading resource " + loaded + " of " + total;
             if (loaded == total) {
                 document.getElementById("loading-screen").innerText = "";
                 var terminalLines = document.getElementsByClassName("terminal");
-                console.log(terminalLines);
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
                 var _iteratorError = undefined;
 
                 try {
                     for (var _iterator = terminalLines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        // line.style.visibility = "visible";
-
                         var line = _step.value;
+
+                        line.style.visibility = "visible";
                     }
                 } catch (err) {
                     _didIteratorError = true;
