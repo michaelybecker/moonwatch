@@ -19,6 +19,21 @@ body {
   right: 0;
 }
 
+#loading-screen {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+E#info1 {
+  visibility: hidden;
+}
+
+
 /*Shell CSS courtesy of http://www.codechewing.com/library/mac-terminal-shell-css-html/*/
 .shell-wrap {
   width: 500px;

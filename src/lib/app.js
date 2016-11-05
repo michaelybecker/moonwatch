@@ -10,8 +10,9 @@ container.setAttribute("id", "container");
 document.body.appendChild(container);
 let camera, scene, renderer, controls;
 
-let loader = new THREE.JSONLoader(),
-    tLoader = new THREE.TextureLoader();
+let loadManager = new THREE.LoadingManager(),
+    loader = new THREE.JSONLoader(loadManager),
+    tLoader = new THREE.TextureLoader(loadManager);
 let moon;
 let pointLight;
 
@@ -62,6 +63,21 @@ function main() {
 
     //threejs initialization
     function init(resJSON) {
+
+        loadManager.onProgress = function(item, loaded, total) {
+            console.log(item, loaded, total);
+            document.getElementById("loading-screen").innerText = "Loading resource " + loaded + " of " + total;
+            if (loaded == total) {
+                document.getElementById("loading-screen").innerText = "";
+                let terminalLines = document.getElementsByClassName("terminal");
+                console.log(terminalLines);
+                  for (const line of terminalLines) {
+                  line.style.visibility = "visible";
+                }
+            }
+        }
+
+
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
         camera.position.z = 3;
         scene = new THREE.Scene();

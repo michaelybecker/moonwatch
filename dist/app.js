@@ -117705,8 +117705,9 @@ var camera = void 0,
     renderer = void 0,
     controls = void 0;
 
-var loader = new THREE.JSONLoader(),
-    tLoader = new THREE.TextureLoader();
+var loadManager = new THREE.LoadingManager(),
+    loader = new THREE.JSONLoader(loadManager),
+    tLoader = new THREE.TextureLoader(loadManager);
 var moon = void 0;
 var pointLight = void 0;
 
@@ -117756,6 +117757,41 @@ function main() {
 
     //threejs initialization
     function init(resJSON) {
+
+        loadManager.onProgress = function (item, loaded, total) {
+            console.log(item, loaded, total);
+            document.getElementById("loading-screen").innerText = "Loading resource " + loaded + " of " + total;
+            if (loaded == total) {
+                document.getElementById("loading-screen").innerText = "";
+                var terminalLines = document.getElementsByClassName("terminal");
+                console.log(terminalLines);
+                var _iteratorNormalCompletion = true;
+                var _didIteratorError = false;
+                var _iteratorError = undefined;
+
+                try {
+                    for (var _iterator = terminalLines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                        var line = _step.value;
+
+                        line.style.visibility = "visible";
+                    }
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion && _iterator.return) {
+                            _iterator.return();
+                        }
+                    } finally {
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
+                    }
+                }
+            }
+        };
+
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
         camera.position.z = 3;
         scene = new THREE.Scene();
