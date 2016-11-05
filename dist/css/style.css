@@ -29,11 +29,6 @@ body {
   top: 50%;
 }
 
-#info1 {
-  visibility: hidden;
-}
-
-
 /*Shell CSS courtesy of http://www.codechewing.com/library/mac-terminal-shell-css-html/*/
 .shell-wrap {
   width: 500px;
