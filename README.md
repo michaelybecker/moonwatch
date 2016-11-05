@@ -1,15 +1,16 @@
-# moonwork
+# møønwatch
 
-## A simple Moon phase data visualization, live at [moonwatch.michaelhazani.com](http://moonwatch.michaelhazani.com)
+## A simple møøn phase data visualization, live at [moonwatch.michaelhazani.com](http://moonwatch.michaelhazani.com)
 
 ![Screenshot](scrshot.png?raw=true)
 
-### To build:
-1. npm install
-2. watchify (for hot reload)
-3. node server.js
-4. in your browser window: localhost:3000
 
-#### TODO:
-1. Add data
-2. Finish phase-to-dirlight mapping
+###
+### tø build:
+1. npm install
+2. npm run watchify (for høt reløad)
+3. nøde server.js
+4. take yøur brøwser to løcalhøst:3000
+
+
+#### things that are gøød: [the BurningSøul Møøn Api](https://burningsoul.cloud/apis/moon) and [threejs](http://threejs.org)
