@@ -1,14 +1,22 @@
 
 body {
+  background-color: #000;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+
+  color: #45D40C;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.85em;
+  line-height: 1.6em;
 }
 
-#cont {
-  /*position: absolute;*/
-  margin: -10px;
-  padding: -10px;
+
+#header {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
 /*Shell CSS courtesy of http://www.codechewing.com/library/mac-terminal-shell-css-html/*/
@@ -59,9 +67,7 @@ body {
   padding: 5px;
   list-style: none;
   background: transparent;
-  color: #45D40C;
-  font-family: 'Inconsolata', monospace;;
-  line-height: 1.6em;
+
 
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
