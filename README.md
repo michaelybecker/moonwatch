@@ -1,10 +1,10 @@
 # moonwork
 
-## A Moon visualization, depicting the current phase of the moon in real time
+## A simple Moon phase data visualization, live at [moonwatch.michaelhazani.com](http://moonwatch.michaelhazani.com)
 
 ![Screenshot](scrshot.png?raw=true)
 
-### To build: 
+### To build:
 1. npm install
 2. watchify (for hot reload)
 3. node server.js

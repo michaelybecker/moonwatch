@@ -117771,9 +117771,9 @@ function main() {
 
                 try {
                     for (var _iterator = terminalLines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var line = _step.value;
+                        // line.style.visibility = "visible";
 
-                        line.style.visibility = "visible";
+                        var line = _step.value;
                     }
                 } catch (err) {
                     _didIteratorError = true;

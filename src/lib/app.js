@@ -72,7 +72,7 @@ function main() {
                 let terminalLines = document.getElementsByClassName("terminal");
                 console.log(terminalLines);
                   for (const line of terminalLines) {
-                  line.style.visibility = "visible";
+                  // line.style.visibility = "visible";
                 }
             }
         }
