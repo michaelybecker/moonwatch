@@ -1,6 +1,6 @@
 # møønwatch
 
-## A simple møøn phase data visualization, live at [moonwatch.michaelhazani.com](http://moonwatch.michaelhazani.com)
+## A simple møøn phase data visualization, live at [moonwatch.michaelhazani.com](http://moonwatch.herokuapp.com)
 
 ![Screenshot](moonwatch.png?raw=true)
 
