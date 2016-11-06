@@ -148,13 +148,13 @@ function main() {
         // change light intensity based on illumination
         if (illumination > 80) {
             pointLight.intensity = 5;
-        } else if (illumination < 80 && illumination > 60) {
+        } else if (illumination < 80 && illumination >= 60) {
             pointLight.intensity = 4;
-        } else if (illumination < 60 && illumination > 40) {
+        } else if (illumination < 60 && illumination >= 40) {
             pointLight.intensity = 3;
-        } else if (illumination < 40 && illumination > 20) {
+        } else if (illumination < 40 && illumination >= 20) {
             pointLight.intensity = 2;
-        } else if (illumination < 20 && illumination > 1) {
+        } else if (illumination < 20 && illumination >= 1) {
             pointLight.intensity = 1.5;
         } else {
             pointLight.intensity = 0;
