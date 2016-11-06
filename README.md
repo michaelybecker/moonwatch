@@ -2,7 +2,7 @@
 
 ## A simple møøn phase data visualization, live at [moonwatch.michaelhazani.com](http://moonwatch.michaelhazani.com)
 
-![Screenshot](scrshot.png?raw=true)
+![Screenshot](moonwatch.png?raw=true)
 
 
 ###
