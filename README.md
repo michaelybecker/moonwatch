@@ -10,7 +10,7 @@
 1. npm install
 2. npm run watchify (for høt reløad)
 3. nøde server.js
-4. take yøur brøwser to løcalhøst:3000
+4. point yøur brøwser at løcalhøst:3000
 
 
 #### things that are gøød: [the BurningSøul Møøn Api](https://burningsoul.cloud/apis/moon) and [threejs](http://threejs.org)
