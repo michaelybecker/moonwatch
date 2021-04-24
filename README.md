@@ -4,6 +4,8 @@
 
 ![Screenshot](moonwatch.png?raw=true)
 
+## UPDATE: as flagged [here](https://github.com/MichaelHazani/moonwatch/issues/1), unfortunately the API that this project relied on is no longer working. PRs/update welcome! (I'd love to give this a once-over once I get the time...)
+
 
 ###
 ### tø build:
